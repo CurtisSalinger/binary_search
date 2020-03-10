@@ -76,9 +76,9 @@ def count_repeats(xs, x):
 			return 0
 		def go_left(l,r):
 			mid = (l+r)//2
-			print('left = ', l,'mid = ', mid , 'right = ',r)
+			#print('left = ', l,'mid = ', mid , 'right = ',r)
 			if r - l <= 1:
-				print('leftmost index = ',mid)
+				#print('leftmost index = ',mid)
 				if xs[l] == x:
 					return l
 				if xs[r] == x:
@@ -97,13 +97,13 @@ def count_repeats(xs, x):
 		l = 0
 		r = len(xs) - 1
 		if xs[r] == x:
-			print('FIRST ELEM rightmost index = ',r)
+			#print('FIRST ELEM rightmost index = ',r)
 			return r
 		def go_right(l,r):
 			mid = (l+r)//2
-			print('left = ',l, 'mid = ', mid , 'right = ',r)
+			#print('left = ',l, 'mid = ', mid , 'right = ',r)
 			if r - l <= 1:
-				print('rightmost index = ',mid)
+				#print('rightmost index = ',mid)
 				if xs[l] == x:
 					return l
 				if xs[r] == x:
@@ -128,7 +128,7 @@ def count_repeats(xs, x):
 		#print('\n\n Final left = ', left, 'Final right = ', right, 'Difference = ', dif, 'Final return value = ', 1)
 		return 1
 
-	print('\n\n Final left = ', left, 'Final right = ', right, 'Difference = ', dif)
+	#print('\n\n Final left = ', left, 'Final right = ', right, 'Difference = ', dif)
 	return (dif + 1)
 
 
